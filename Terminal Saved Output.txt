@@ -1,0 +1,1469 @@
+Last login: Thu Feb  5 17:27:17 on ttys003
+denise.macalino@BC-0216-Denise ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+Sorry, try again.
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+/etc/paths.d/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/bin/install -d -o root -g wheel -m 0755 /opt/homebrew
+Password:
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown denise.macalino /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R denise.macalino:admin /opt/homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 320869, done.
+remote: Counting objects: 100% (240/240), done.
+remote: Compressing objects: 100% (136/136), done.
+remote: Total 320869 (delta 159), reused 148 (delta 104), pack-reused 320629 (from 5)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Total 55 (delta 33), reused 33 (delta 33), pack-reused 22 (from 1)
+==> /usr/bin/sudo /bin/mkdir -p /etc/paths.d
+==> /usr/bin/sudo tee /etc/paths.d/homebrew
+/opt/homebrew/bin
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /etc/paths.d/homebrew
+==> /usr/bin/sudo /bin/chmod a+r /etc/paths.d/homebrew
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:1c98fa49eacc935640a6f8e10a2bf33f14cfc276804b71ddb658ea45ba99d167
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.arm64_big_sur.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/denise.macalino/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/denise.macalino/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+denise.macalino@BC-0216-Denise ~ % (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"
+subsh quote> brew doctor
+subsh quote> echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+subsh quote> eval "$(/opt/homebrew/bin/brew shellenv)"
+subsh quote> echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/denise.macalino/.zprofile
+subsh quote> 
+denise.macalino@BC-0216-Denise ~ % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+denise.macalino@BC-0216-Denise ~ % eval "$(/opt/homebrew/bin/brew shellenv)"
+denise.macalino@BC-0216-Denise ~ % brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+denise.macalino@BC-0216-Denise ~ % brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+denise.macalino@BC-0216-Denise ~ % brew --version
+Homebrew 5.0.13
+denise.macalino@BC-0216-Denise ~ % cd desktop
+denise.macalino@BC-0216-Denise desktop % cd
+denise.macalino@BC-0216-Denise ~ % cd desktop
+denise.macalino@BC-0216-Denise desktop % cd desktop
+cd: no such file or directory: desktop
+denise.macalino@BC-0216-Denise desktop % cd desktop
+cd: no such file or directory: desktop
+denise.macalino@BC-0216-Denise desktop % cd Jupyter
+denise.macalino@BC-0216-Denise Jupyter % brew install python@3.13
+✔︎ JSON API formula.jws.json                          Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                             Downloaded   15.3MB/ 15.3MB
+==> Fetching downloads for: python@3.13
+✔︎ Bottle Manifest python@3.13 (3.13.12)              Downloaded   26.6KB/ 26.6KB
+✔︎ Bottle Manifest openssl@3 (3.6.1)                  Downloaded   11.8KB/ 11.8KB
+✔︎ Bottle Manifest sqlite (3.51.2)                    Downloaded   11.4KB/ 11.4KB
+✔︎ Bottle Manifest xz (5.8.2)                         Downloaded   11.8KB/ 11.8KB
+✔︎ Bottle Manifest ca-certificates (2025-12-02)       Downloaded    2.0KB/  2.0KB
+✔︎ Bottle Manifest mpdecimal (4.0.1)                  Downloaded   11.9KB/ 11.9KB
+✔︎ Bottle xz (5.8.2)                                  Downloaded  764.9KB/764.9KB
+✔︎ Bottle Manifest readline (8.3.3)                   Downloaded   10.0KB/ 10.0KB
+✔︎ Bottle readline (8.3.3)                            Downloaded  758.1KB/758.1KB
+✔︎ Bottle sqlite (3.51.2)                             Downloaded    2.4MB/  2.4MB
+✔︎ Bottle mpdecimal (4.0.1)                           Downloaded  185.7KB/185.7KB
+✔︎ Bottle ca-certificates (2025-12-02)                Downloaded  131.8KB/131.8KB
+✔︎ Bottle openssl@3 (3.6.1)                           Downloaded   10.9MB/ 10.9MB
+✔︎ Bottle python@3.13 (3.13.12)                       Downloaded   18.4MB/ 18.4MB
+==> Installing dependencies for python@3.13: mpdecimal, ca-certificates, openssl@3, readline, sqlite and xz
+==> Installing python@3.13 dependency: mpdecimal
+==> Pouring mpdecimal--4.0.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mpdecimal/4.0.1: 22 files, 661.2KB
+==> Installing python@3.13 dependency: ca-certificates
+==> Pouring ca-certificates--2025-12-02.all.bottle.1.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /opt/homebrew/Cellar/ca-certificates/2025-12-02: 4 files, 236.4KB
+==> Installing python@3.13 dependency: openssl@3
+==> Pouring openssl@3--3.6.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openssl@3/3.6.1: 7,624 files, 37.6MB
+==> Installing python@3.13 dependency: readline
+==> Pouring readline--8.3.3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/readline/8.3.3: 56 files, 2.7MB
+==> Installing python@3.13 dependency: sqlite
+==> Pouring sqlite--3.51.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/sqlite/3.51.2: 13 files, 5.3MB
+==> Installing python@3.13 dependency: xz
+==> Pouring xz--5.8.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xz/5.8.2: 96 files, 2.7MB
+==> Installing python@3.13
+==> Pouring python@3.13--3.13.12.arm64_sequoia.bottle.tar.gz
+==> Caveats
+Python is installed as
+  /opt/homebrew/bin/python3.13
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.13`, `python3.13-config`, `pip3.13` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.13/libexec/bin
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+`idle3.13` requires tkinter, which is available separately:
+  brew install python-tk@3.13
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /opt/homebrew/Cellar/python@3.13/3.13.12: 3,625 files, 72.1MB
+==> Running `brew cleanup python@3.13`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Caveats
+==> python@3.13
+Python is installed as
+  /opt/homebrew/bin/python3.13
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.13`, `python3.13-config`, `pip3.13` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.13/libexec/bin
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+`idle3.13` requires tkinter, which is available separately:
+  brew install python-tk@3.13
+
+See: https://docs.brew.sh/Homebrew-and-Python
+denise.macalino@BC-0216-Denise Jupyter % python3.13 -m venv env
+denise.macalino@BC-0216-Denise Jupyter % source env/bin/activate
+(env) denise.macalino@BC-0216-Denise Jupyter % pip install jupyterlab ipykernel
+Collecting jupyterlab
+  Downloading jupyterlab-4.5.3-py3-none-any.whl.metadata (16 kB)
+Collecting ipykernel
+  Downloading ipykernel-7.1.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting async-lru>=1.0.0 (from jupyterlab)
+  Downloading async_lru-2.1.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting httpx<1,>=0.25.0 (from jupyterlab)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting jinja2>=3.0.3 (from jupyterlab)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jupyter-core (from jupyterlab)
+  Downloading jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting jupyter-lsp>=2.0.0 (from jupyterlab)
+  Downloading jupyter_lsp-2.3.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting jupyter-server<3,>=2.4.0 (from jupyterlab)
+  Downloading jupyter_server-2.17.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting jupyterlab-server<3,>=2.28.0 (from jupyterlab)
+  Downloading jupyterlab_server-2.28.0-py3-none-any.whl.metadata (5.9 kB)
+Collecting notebook-shim>=0.2 (from jupyterlab)
+  Downloading notebook_shim-0.2.4-py3-none-any.whl.metadata (4.0 kB)
+Collecting packaging (from jupyterlab)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=41.1.0 (from jupyterlab)
+  Downloading setuptools-80.10.2-py3-none-any.whl.metadata (6.6 kB)
+Collecting tornado>=6.2.0 (from jupyterlab)
+  Downloading tornado-6.5.4-cp39-abi3-macosx_10_9_universal2.whl.metadata (2.8 kB)
+Collecting traitlets (from jupyterlab)
+  Downloading traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting anyio (from httpx<1,>=0.25.0->jupyterlab)
+  Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting certifi (from httpx<1,>=0.25.0->jupyterlab)
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.25.0->jupyterlab)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.25.0->jupyterlab)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.25.0->jupyterlab)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting argon2-cffi>=21.1 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading argon2_cffi-25.1.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting jupyter-client>=7.4.4 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading jupyter_client-8.8.0-py3-none-any.whl.metadata (8.4 kB)
+Collecting jupyter-events>=0.11.0 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading jupyter_events-0.12.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting jupyter-server-terminals>=0.4.4 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading jupyter_server_terminals-0.5.4-py3-none-any.whl.metadata (5.9 kB)
+Collecting nbconvert>=6.4.4 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading nbconvert-7.17.0-py3-none-any.whl.metadata (8.4 kB)
+Collecting nbformat>=5.3.0 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting prometheus-client>=0.9 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading prometheus_client-0.24.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting pyzmq>=24 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading pyzmq-27.1.0-cp312-abi3-macosx_10_15_universal2.whl.metadata (6.0 kB)
+Collecting send2trash>=1.8.2 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading send2trash-2.1.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting terminado>=0.8.3 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading terminado-0.18.1-py3-none-any.whl.metadata (5.8 kB)
+Collecting websocket-client>=1.7 (from jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting babel>=2.10 (from jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Downloading babel-2.18.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting json5>=0.9.0 (from jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Downloading json5-0.13.0-py3-none-any.whl.metadata (36 kB)
+Collecting jsonschema>=4.18.0 (from jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting requests>=2.31 (from jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting appnope>=0.1.2 (from ipykernel)
+  Downloading appnope-0.1.4-py2.py3-none-any.whl.metadata (908 bytes)
+Collecting comm>=0.1.1 (from ipykernel)
+  Downloading comm-0.2.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel)
+  Downloading debugpy-1.8.20-cp313-cp313-macosx_15_0_universal2.whl.metadata (1.4 kB)
+Collecting ipython>=7.23.1 (from ipykernel)
+  Downloading ipython-9.10.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel)
+  Downloading matplotlib_inline-0.2.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting nest-asyncio>=1.4 (from ipykernel)
+  Downloading nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting psutil>=5.7 (from ipykernel)
+  Downloading psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading argon2_cffi_bindings-25.1.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (7.4 kB)
+Collecting decorator>=4.3.2 (from ipython>=7.23.1->ipykernel)
+  Downloading decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=7.23.1->ipykernel)
+  Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.1 (from ipython>=7.23.1->ipykernel)
+  Downloading jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting pexpect>4.3 (from ipython>=7.23.1->ipykernel)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel)
+  Downloading prompt_toolkit-3.0.52-py3-none-any.whl.metadata (6.4 kB)
+Collecting pygments>=2.11.0 (from ipython>=7.23.1->ipykernel)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data>=0.6.0 (from ipython>=7.23.1->ipykernel)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting wcwidth (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel)
+  Downloading wcwidth-0.5.3-py3-none-any.whl.metadata (30 kB)
+Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.18.1->ipython>=7.23.1->ipykernel)
+  Downloading parso-0.8.5-py2.py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2>=3.0.3->jupyterlab)
+  Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Using cached attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Downloading rpds_py-0.30.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Collecting python-dateutil>=2.8.2 (from jupyter-client>=7.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting platformdirs>=2.5 (from jupyter-core->jupyterlab)
+  Downloading platformdirs-4.5.1-py3-none-any.whl.metadata (12 kB)
+Collecting python-json-logger>=2.0.4 (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading python_json_logger-4.0.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting pyyaml>=5.3 (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting rfc3339-validator (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting rfc3986-validator>=0.1.1 (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting fqdn (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading fqdn-1.5.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting isoduration (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading isoduration-20.11.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting jsonpointer>1.13 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+Collecting rfc3987-syntax>=1.1.0 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading rfc3987_syntax-1.1.0-py3-none-any.whl.metadata (7.7 kB)
+Collecting uri-template (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading uri_template-1.3.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting webcolors>=24.6.0 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading webcolors-25.10.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting beautifulsoup4 (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading beautifulsoup4-4.14.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting bleach!=5.0.0 (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading bleach-6.3.0-py3-none-any.whl.metadata (31 kB)
+Collecting defusedxml (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting jupyterlab-pygments (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting mistune<4,>=2.0.3 (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading mistune-3.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting nbclient>=0.5.0 (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading nbclient-0.10.4-py3-none-any.whl.metadata (8.3 kB)
+Collecting pandocfilters>=1.4.1 (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading pandocfilters-1.5.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting webencodings (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting tinycss2<1.5,>=1.1.0 (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading tinycss2-1.4.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting fastjsonschema>=2.15 (from nbformat>=5.3.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading fastjsonschema-2.21.2-py3-none-any.whl.metadata (2.3 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython>=7.23.1->ipykernel)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->jupyter-client>=7.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Downloading charset_normalizer-3.4.4-cp313-cp313-macosx_10_13_universal2.whl.metadata (37 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.31->jupyterlab-server<3,>=2.28.0->jupyterlab)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting lark>=1.2.2 (from rfc3987-syntax>=1.1.0->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading lark-1.3.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel)
+  Downloading executing-2.2.1-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel)
+  Downloading asttokens-3.0.1-py3-none-any.whl.metadata (4.9 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel)
+  Downloading pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading cffi-2.0.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading soupsieve-2.8.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting typing-extensions>=4.0.0 (from beautifulsoup4->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting arrow>=0.15.0 (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading arrow-1.4.0-py3-none-any.whl.metadata (7.7 kB)
+Collecting tzdata (from arrow>=0.15.0->isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab)
+  Downloading tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading jupyterlab-4.5.3-py3-none-any.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 26.6 MB/s  0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading jupyter_server-2.17.0-py3-none-any.whl (388 kB)
+Downloading jupyterlab_server-2.28.0-py3-none-any.whl (59 kB)
+Downloading ipykernel-7.1.0-py3-none-any.whl (117 kB)
+Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+Downloading appnope-0.1.4-py2.py3-none-any.whl (4.3 kB)
+Downloading argon2_cffi-25.1.0-py3-none-any.whl (14 kB)
+Downloading async_lru-2.1.0-py3-none-any.whl (6.9 kB)
+Downloading babel-2.18.0-py3-none-any.whl (10.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 25.2 MB/s  0:00:00
+Downloading comm-0.2.3-py3-none-any.whl (7.3 kB)
+Downloading debugpy-1.8.20-cp313-cp313-macosx_15_0_universal2.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 25.4 MB/s  0:00:00
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Downloading ipython-9.10.0-py3-none-any.whl (622 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 622.8/622.8 kB 14.1 MB/s  0:00:00
+Downloading prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 17.9 MB/s  0:00:00
+Downloading parso-0.8.5-py2.py3-none-any.whl (106 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading json5-0.13.0-py3-none-any.whl (36 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached attrs-25.4.0-py3-none-any.whl (67 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading jupyter_client-8.8.0-py3-none-any.whl (107 kB)
+Downloading jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Downloading jupyter_events-0.12.0-py3-none-any.whl (19 kB)
+Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+Downloading jupyter_lsp-2.3.0-py3-none-any.whl (76 kB)
+Downloading jupyter_server_terminals-0.5.4-py3-none-any.whl (13 kB)
+Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Downloading matplotlib_inline-0.2.1-py3-none-any.whl (9.5 kB)
+Downloading nbconvert-7.17.0-py3-none-any.whl (261 kB)
+Downloading mistune-3.2.0-py3-none-any.whl (53 kB)
+Downloading bleach-6.3.0-py3-none-any.whl (164 kB)
+Downloading tinycss2-1.4.0-py3-none-any.whl (26 kB)
+Downloading nbclient-0.10.4-py3-none-any.whl (25 kB)
+Downloading nbformat-5.10.4-py3-none-any.whl (78 kB)
+Downloading fastjsonschema-2.21.2-py3-none-any.whl (24 kB)
+Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Downloading notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Downloading pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Downloading platformdirs-4.5.1-py3-none-any.whl (18 kB)
+Downloading prometheus_client-0.24.1-py3-none-any.whl (64 kB)
+Downloading psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl (129 kB)
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 14.6 MB/s  0:00:00
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading python_json_logger-4.0.0-py3-none-any.whl (15 kB)
+Downloading pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl (173 kB)
+Downloading pyzmq-27.1.0-cp312-abi3-macosx_10_15_universal2.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 15.5 MB/s  0:00:00
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp313-cp313-macosx_10_13_universal2.whl (208 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached certifi-2026.1.4-py3-none-any.whl (152 kB)
+Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+Downloading rfc3987_syntax-1.1.0-py3-none-any.whl (8.0 kB)
+Downloading lark-1.3.1-py3-none-any.whl (113 kB)
+Downloading rpds_py-0.30.0-cp313-cp313-macosx_11_0_arm64.whl (358 kB)
+Downloading send2trash-2.1.0-py3-none-any.whl (17 kB)
+Downloading setuptools-80.10.2-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 16.2 MB/s  0:00:00
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-3.0.1-py3-none-any.whl (27 kB)
+Downloading executing-2.2.1-py2.py3-none-any.whl (28 kB)
+Downloading terminado-0.18.1-py3-none-any.whl (14 kB)
+Downloading tornado-6.5.4-cp39-abi3-macosx_10_9_universal2.whl (443 kB)
+Downloading traitlets-5.14.3-py3-none-any.whl (85 kB)
+Downloading webcolors-25.10.0-py3-none-any.whl (14 kB)
+Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Downloading websocket_client-1.9.0-py3-none-any.whl (82 kB)
+Downloading argon2_cffi_bindings-25.1.0-cp39-abi3-macosx_11_0_arm64.whl (31 kB)
+Downloading cffi-2.0.0-cp313-cp313-macosx_11_0_arm64.whl (181 kB)
+Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+Downloading soupsieve-2.8.3-py3-none-any.whl (37 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+Downloading arrow-1.4.0-py3-none-any.whl (68 kB)
+Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+Downloading pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Downloading tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+Downloading uri_template-1.3.0-py3-none-any.whl (11 kB)
+Downloading wcwidth-0.5.3-py3-none-any.whl (92 kB)
+Installing collected packages: webencodings, pure-eval, ptyprocess, fastjsonschema, websocket-client, webcolors, wcwidth, urllib3, uri-template, tzdata, typing-extensions, traitlets, tornado, tinycss2, soupsieve, six, setuptools, send2trash, rpds-py, rfc3986-validator, pyzmq, pyyaml, python-json-logger, pygments, pycparser, psutil, prometheus-client, platformdirs, pexpect, parso, pandocfilters, packaging, nest-asyncio, mistune, MarkupSafe, lark, jupyterlab-pygments, jsonpointer, json5, idna, h11, fqdn, executing, defusedxml, decorator, debugpy, comm, charset_normalizer, certifi, bleach, babel, attrs, async-lru, asttokens, appnope, terminado, stack_data, rfc3987-syntax, rfc3339-validator, requests, referencing, python-dateutil, prompt_toolkit, matplotlib-inline, jupyter-core, jinja2, jedi, ipython-pygments-lexers, httpcore, cffi, beautifulsoup4, anyio, jupyter-server-terminals, jupyter-client, jsonschema-specifications, ipython, httpx, arrow, argon2-cffi-bindings, jsonschema, isoduration, ipykernel, argon2-cffi, nbformat, nbclient, jupyter-events, nbconvert, jupyter-server, notebook-shim, jupyterlab-server, jupyter-lsp, jupyterlab
+Successfully installed MarkupSafe-3.0.3 anyio-4.12.1 appnope-0.1.4 argon2-cffi-25.1.0 argon2-cffi-bindings-25.1.0 arrow-1.4.0 asttokens-3.0.1 async-lru-2.1.0 attrs-25.4.0 babel-2.18.0 beautifulsoup4-4.14.3 bleach-6.3.0 certifi-2026.1.4 cffi-2.0.0 charset_normalizer-3.4.4 comm-0.2.3 debugpy-1.8.20 decorator-5.2.1 defusedxml-0.7.1 executing-2.2.1 fastjsonschema-2.21.2 fqdn-1.5.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.11 ipykernel-7.1.0 ipython-9.10.0 ipython-pygments-lexers-1.1.1 isoduration-20.11.0 jedi-0.19.2 jinja2-3.1.6 json5-0.13.0 jsonpointer-3.0.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 jupyter-client-8.8.0 jupyter-core-5.9.1 jupyter-events-0.12.0 jupyter-lsp-2.3.0 jupyter-server-2.17.0 jupyter-server-terminals-0.5.4 jupyterlab-4.5.3 jupyterlab-pygments-0.3.0 jupyterlab-server-2.28.0 lark-1.3.1 matplotlib-inline-0.2.1 mistune-3.2.0 nbclient-0.10.4 nbconvert-7.17.0 nbformat-5.10.4 nest-asyncio-1.6.0 notebook-shim-0.2.4 packaging-26.0 pandocfilters-1.5.1 parso-0.8.5 pexpect-4.9.0 platformdirs-4.5.1 prometheus-client-0.24.1 prompt_toolkit-3.0.52 psutil-7.2.2 ptyprocess-0.7.0 pure-eval-0.2.3 pycparser-3.0 pygments-2.19.2 python-dateutil-2.9.0.post0 python-json-logger-4.0.0 pyyaml-6.0.3 pyzmq-27.1.0 referencing-0.37.0 requests-2.32.5 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 rfc3987-syntax-1.1.0 rpds-py-0.30.0 send2trash-2.1.0 setuptools-80.10.2 six-1.17.0 soupsieve-2.8.3 stack_data-0.6.3 terminado-0.18.1 tinycss2-1.4.0 tornado-6.5.4 traitlets-5.14.3 typing-extensions-4.15.0 tzdata-2025.3 uri-template-1.3.0 urllib3-2.6.3 wcwidth-0.5.3 webcolors-25.10.0 webencodings-0.5.1 websocket-client-1.9.0
+
+[notice] A new release of pip is available: 25.2 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+(env) denise.macalino@BC-0216-Denise Jupyter % python -m ipykernel install --user --name=python313 --display-name "Python 3.13 (Estable)"
+Installed kernelspec python313 in /Users/denise.macalino/Library/Jupyter/kernels/python313
+(env) denise.macalino@BC-0216-Denise Jupyter % jupyter lab
+[I 2026-02-05 17:56:44.605 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-02-05 17:56:44.607 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-02-05 17:56:44.609 ServerApp] jupyterlab | extension was successfully linked.
+[I 2026-02-05 17:56:44.610 ServerApp] Writing Jupyter server cookie secret to /Users/denise.macalino/Library/Jupyter/runtime/jupyter_cookie_secret
+[I 2026-02-05 17:56:44.733 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-02-05 17:56:45.167 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-02-05 17:56:45.170 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-02-05 17:56:45.171 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-02-05 17:56:45.172 LabApp] JupyterLab extension loaded from /Users/denise.macalino/Desktop/Jupyter/env/lib/python3.13/site-packages/jupyterlab
+[I 2026-02-05 17:56:45.173 LabApp] JupyterLab application directory is /Users/denise.macalino/Desktop/Jupyter/env/share/jupyter/lab
+[I 2026-02-05 17:56:45.173 LabApp] Extension Manager is 'pypi'.
+[I 2026-02-05 17:56:45.217 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-02-05 17:56:45.218 ServerApp] Serving notebooks from local directory: /Users/denise.macalino/Desktop/Jupyter
+[I 2026-02-05 17:56:45.218 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2026-02-05 17:56:45.218 ServerApp] http://localhost:8888/lab?token=79f8908c7f0b9d2ebd1249158d750a94ac4f861ed70b573d
+[I 2026-02-05 17:56:45.218 ServerApp]     http://127.0.0.1:8888/lab?token=79f8908c7f0b9d2ebd1249158d750a94ac4f861ed70b573d
+[I 2026-02-05 17:56:45.218 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2026-02-05 17:56:45.221 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/denise.macalino/Library/Jupyter/runtime/jpserver-82129-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=79f8908c7f0b9d2ebd1249158d750a94ac4f861ed70b573d
+        http://127.0.0.1:8888/lab?token=79f8908c7f0b9d2ebd1249158d750a94ac4f861ed70b573d
+[I 2026-02-05 17:56:45.232 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-02-05 17:56:47.139 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2026-02-05 18:08:05.756 ServerApp] Creating new notebook in 
+[I 2026-02-05 18:08:05.797 ServerApp] Writing notebook-signing key to /Users/denise.macalino/Library/Jupyter/notebook_secret
+[I 2026-02-05 18:08:05.955 ServerApp] Kernel started: fd7e7096-ab8f-4bca-a624-f9093e4807e0
+[I 2026-02-05 18:08:06.591 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 18:08:06.591 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 18:08:06.592 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 18:08:06.593 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[W 2026-02-05 18:08:06.593 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-02-05 18:08:06.606 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 18:08:06.608 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 18:09:32.774 ServerApp] Creating new notebook in 
+[I 2026-02-05 18:09:32.883 ServerApp] Kernel started: 3d2a9494-fd1c-455d-98c6-743146c71f84
+[I 2026-02-05 18:09:33.225 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 18:09:33.225 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 18:10:05.881 ServerApp] Saving file at /Untitled.ipynb
+[I 2026-02-05 18:11:32.857 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:13:32.911 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:15:25.150 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:0dda1f6b-282c-4834-bc75-7d88b1ca2219
+[I 2026-02-05 18:15:25.151 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:925cd24c-45fd-4367-82b9-0a94fdcdfb28
+[I 2026-02-05 18:15:25.498 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 18:15:25.499 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 18:15:25.511 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 18:15:25.513 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 18:15:25.515 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:76a13b28-ad2f-4f15-ab06-7b077f90ec14
+[I 2026-02-05 18:15:25.521 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:cf3d15d4-e5c0-4118-8f00-80a316638982
+[W 2026-02-05 18:15:25.747 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2026-02-05 18:15:26.054 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 18:15:26.056 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 18:15:26.068 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 18:15:26.069 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 18:16:32.840 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:18:32.887 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:20:32.932 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:22:32.968 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:24:33.004 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-05 18:30:30.374 ServerApp] Creating new notebook in /env
+[I 2026-02-05 18:30:30.493 ServerApp] Kernel started: 7ee8d7e8-6cf5-4855-8817-53983e3fde62
+[I 2026-02-05 18:30:30.841 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 18:30:30.841 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 18:32:36.303 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:34:36.369 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:36:36.411 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:38:36.453 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:40:36.488 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:42:36.518 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:44:36.564 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:46:36.614 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:48:36.665 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:50:36.706 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:52:36.764 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:54:36.819 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:56:36.875 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 18:58:37.317 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:00:37.370 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:02:38.311 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:07:48.580 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 19:07:48.581 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 19:07:48.584 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 19:07:48.608 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 19:07:48.609 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 19:07:48.609 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 19:07:48.623 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 19:07:48.625 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 19:07:48.641 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 19:07:48.646 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 19:07:48.647 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 19:07:48.647 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 19:28:06.201 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:29:46.105 ServerApp] Creating new notebook in /env
+[I 2026-02-05 19:29:46.245 ServerApp] Kernel started: 612a0dba-e6d3-4420-87eb-800419da24e4
+[I 2026-02-05 19:29:46.631 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-05 19:29:46.632 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-05 19:30:06.257 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:31:54.310 ServerApp] Saving file at /env/RickandMorty.ipynb
+[I 2026-02-05 19:33:54.356 ServerApp] Saving file at /env/RickandMorty.ipynb
+[I 2026-02-05 19:35:54.405 ServerApp] Saving file at /env/RickandMorty.ipynb
+[I 2026-02-05 19:38:06.329 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:40:06.383 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:42:06.439 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:44:06.488 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:46:06.562 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 19:54:06.632 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:00:07.220 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:01:16.037 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 20:01:16.039 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 20:01:16.039 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 20:01:16.039 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 20:01:16.040 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-05 20:01:16.040 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-05 20:01:16.040 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 20:01:16.053 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 20:01:16.054 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 20:01:16.054 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 20:01:16.065 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 20:01:16.066 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 20:01:16.066 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 20:01:16.079 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 20:01:16.080 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 20:01:16.080 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 20:10:08.183 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:12:09.175 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:14:09.223 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:16:09.275 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:18:09.329 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:20:09.379 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:22:09.426 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:24:10.181 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:26:10.231 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:34:10.305 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:40:11.181 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:48:13.180 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:50:13.233 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:52:13.296 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:54:13.338 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:56:13.385 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 20:58:13.429 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 21:00:13.482 ServerApp] Saving file at /env/Pokemon.ipynb
+[I 2026-02-05 21:00:48.649 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:00:48.650 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:00:48.650 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:00:48.651 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 21:00:48.653 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 21:00:48.653 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 21:00:48.653 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:00:48.667 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 21:00:48.668 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 21:00:48.668 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:00:48.681 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 21:00:48.682 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 21:00:48.682 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:00:48.694 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-05 21:00:48.695 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-05 21:00:48.695 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 21:06:54.886 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 21:06:54.887 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:06:54.887 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:06:54.888 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:06:54.890 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-05 21:06:54.891 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-05 21:06:54.891 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 21:06:54.904 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 21:06:54.905 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 21:06:54.905 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:06:54.920 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 21:06:54.920 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 21:06:54.920 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:06:54.933 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 21:06:54.933 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 21:06:54.934 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:07:15.304 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:07:15.305 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:07:15.305 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:07:15.305 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-05 21:07:15.307 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-05 21:07:15.307 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-05 21:07:15.307 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-05 21:07:15.321 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-05 21:07:15.321 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-05 21:07:15.321 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-05 21:07:15.334 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-05 21:07:15.335 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-05 21:07:15.335 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-05 21:07:15.351 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-05 21:07:15.352 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-05 21:07:15.352 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-06 10:10:08.163 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:f940be28-d791-4ae1-9f77-61d3495185d6
+[I 2026-02-06 10:10:08.167 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:5f69460f-723e-4c95-bf70-aa865ea75f14
+[I 2026-02-06 10:10:08.168 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:14032d8b-f6c3-473e-871f-80e1098c9f2c
+[I 2026-02-06 10:10:08.169 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:fa107c51-7dbc-428b-9065-b1ad82607c3b
+[I 2026-02-13 18:06:29.359 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 18:06:29.361 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 18:06:29.373 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 18:06:29.374 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 18:06:29.376 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:f4f5c881-a1da-403a-9d0e-7b866f5e9653
+[I 2026-02-13 18:06:29.384 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:13321850-a59f-47ea-beb2-94450ddac28f
+[I 2026-02-13 18:06:29.386 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 18:06:29.386 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 18:06:29.395 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:9aad4217-7c6c-4b13-a0b1-fded38ec1b91
+[I 2026-02-13 18:06:29.398 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 18:06:29.398 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[W 2026-02-13 18:06:29.406 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2026-02-13 18:06:29.468 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:372f1ab0-c3f1-4627-bbaf-a2f2a5ec9f4a
+[W 2026-02-13 18:06:29.578 ServerApp] 404 GET /api/contents/env/Untitled.ipynb?content=0&hash=0&1771002389573 (a38c9811ee5547f0aded4959667b7ffc@::1) 1.85ms referer=http://localhost:8888/lab/tree/Untitled1.ipynb
+[W 2026-02-13 18:06:29.578 ServerApp] 404 GET /api/contents/env/Untitled.ipynb?content=0&hash=0&1771002389573 (::1): No such file or directory: env/Untitled.ipynb
+[W 2026-02-13 18:06:29.579 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1771002389573 (a38c9811ee5547f0aded4959667b7ffc@::1) 0.73ms referer=http://localhost:8888/lab/tree/Untitled1.ipynb
+[W 2026-02-13 18:06:29.579 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1771002389573 (::1): No such file or directory: Untitled1.ipynb
+[I 2026-02-13 18:06:30.063 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 18:06:30.074 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 18:06:30.089 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 18:06:30.091 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 18:06:30.103 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 18:06:30.104 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 18:06:30.116 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 18:06:30.116 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[W 2026-02-13 18:06:30.847 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1771002390844 (a38c9811ee5547f0aded4959667b7ffc@::1) 1.55ms referer=http://localhost:8888/lab/tree/Untitled1.ipynb
+[W 2026-02-13 18:06:30.848 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1771002390844 (::1): No such file or directory: Untitled1.ipynb
+[I 2026-02-13 18:06:45.937 ServerApp] Creating new notebook in 
+[I 2026-02-13 18:06:46.085 ServerApp] Kernel started: 5157131f-66dd-4f28-b992-675038a28a6b
+[I 2026-02-13 18:06:47.725 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 18:06:47.726 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 18:08:46.031 ServerApp] Saving file at /Untitled1.ipynb
+[I 2026-02-13 18:10:37.469 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 18:10:37.471 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 18:10:37.472 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 18:10:37.473 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 18:10:37.473 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 18:10:37.477 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 18:10:37.479 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 18:10:37.480 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 18:10:37.491 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 18:10:37.492 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-13 18:10:37.492 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 18:10:37.506 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 18:10:37.507 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 18:10:37.507 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 18:10:37.519 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 18:10:37.520 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 18:10:37.520 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 18:10:37.532 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 18:10:37.532 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 18:10:37.532 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 18:26:53.903 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 18:26:53.904 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 18:26:53.905 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 18:26:53.905 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 18:26:53.905 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 18:26:53.906 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 18:26:53.907 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 18:26:53.907 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 18:26:53.921 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 18:26:53.922 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 18:26:53.922 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 18:26:53.937 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 18:26:53.938 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 18:26:53.938 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 18:26:53.953 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 18:26:53.953 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-13 18:26:53.953 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 18:26:53.965 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 18:26:53.965 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 18:26:53.966 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 19:22:17.162 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 19:22:17.163 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 19:22:17.165 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 19:22:17.166 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 19:22:17.166 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 19:22:17.170 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 19:22:17.170 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 19:22:17.170 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 19:22:17.182 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 19:22:17.182 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-13 19:22:17.182 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 19:22:17.195 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 19:22:17.196 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 19:22:17.196 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 19:22:17.209 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 19:22:17.210 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 19:22:17.210 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 19:22:17.222 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 19:22:17.223 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 19:22:17.223 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 20:30:02.661 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 20:30:02.664 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 20:30:02.664 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 20:30:02.665 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 20:30:02.665 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 20:30:02.666 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 20:30:02.667 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 20:30:02.667 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 20:30:02.730 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 20:30:02.730 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 20:30:02.730 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 20:30:02.745 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 20:30:02.746 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 20:30:02.746 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 20:30:02.760 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 20:30:02.761 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-13 20:30:02.761 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 20:30:02.774 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 20:30:02.775 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 20:30:02.775 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 20:39:39.722 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 20:39:39.726 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 20:39:39.727 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 20:39:39.732 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 20:39:39.733 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-13 20:39:39.736 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-13 20:39:39.737 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-13 20:39:39.737 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-13 20:39:39.750 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-13 20:39:39.751 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-13 20:39:39.752 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-13 20:39:39.764 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-13 20:39:39.764 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-13 20:39:39.764 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-13 20:39:39.776 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-13 20:39:39.776 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-13 20:39:39.776 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-13 20:39:39.792 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-13 20:39:39.793 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-13 20:39:39.793 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 15:03:13.644 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 15:03:13.645 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 15:03:13.645 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 15:03:13.645 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 15:03:13.645 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 15:03:13.646 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-14 15:03:13.647 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-14 15:03:13.647 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 15:03:13.662 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-14 15:03:13.663 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-14 15:03:13.663 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 15:03:13.676 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-14 15:03:13.677 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-14 15:03:13.677 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 15:03:13.690 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-14 15:03:13.690 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-14 15:03:13.690 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 15:03:13.706 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-14 15:03:13.706 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-14 15:03:13.706 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 16:18:38.880 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 16:18:38.880 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 16:18:38.881 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 16:18:38.881 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 16:18:38.881 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 16:18:38.882 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-14 16:18:38.883 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-14 16:18:38.883 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 16:18:38.920 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-14 16:18:38.921 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-14 16:18:38.921 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 16:18:38.943 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-14 16:18:38.946 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-14 16:18:38.947 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 16:18:38.960 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-14 16:18:38.960 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-14 16:18:38.961 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 16:18:38.976 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-14 16:18:38.977 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-14 16:18:38.977 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 17:11:20.576 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 17:11:20.577 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 17:11:20.577 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 17:11:20.578 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 17:11:20.578 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 17:11:20.579 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-14 17:11:20.580 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-14 17:11:20.580 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 17:11:20.594 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-14 17:11:20.596 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-14 17:11:20.596 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 17:11:20.612 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-14 17:11:20.613 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-14 17:11:20.613 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 17:11:20.627 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-14 17:11:20.628 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-14 17:11:20.635 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 17:11:20.641 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-14 17:11:20.642 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-14 17:11:20.642 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 19:14:26.596 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 19:14:26.596 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 19:14:26.597 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 19:14:26.597 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 19:14:26.597 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 19:14:26.598 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-14 19:14:26.599 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-14 19:14:26.599 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 19:14:26.613 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-14 19:14:26.615 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-14 19:14:26.615 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 19:14:26.631 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-14 19:14:26.632 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-14 19:14:26.632 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 19:14:26.644 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-14 19:14:26.646 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-14 19:14:26.646 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 19:14:26.658 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-14 19:14:26.659 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-14 19:14:26.670 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 19:20:37.650 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 19:20:37.651 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 19:20:37.651 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 19:20:37.651 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 19:20:37.652 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-14 19:20:37.653 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-14 19:20:37.653 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-14 19:20:37.653 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-14 19:20:37.668 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-14 19:20:37.668 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-14 19:20:37.668 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-14 19:20:37.682 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-14 19:20:37.682 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-14 19:20:37.682 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-14 19:20:37.695 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-14 19:20:37.696 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-14 19:20:37.696 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-14 19:20:37.712 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-14 19:20:37.713 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-14 19:20:37.714 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-15 00:15:45.574 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-15 00:15:45.582 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-15 00:15:45.583 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-15 00:15:45.584 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-15 00:15:45.584 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-15 00:15:45.586 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-15 00:15:45.586 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-15 00:15:45.587 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-15 00:15:45.600 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-15 00:15:45.600 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-15 00:15:45.600 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-15 00:15:45.615 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-15 00:15:45.616 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-15 00:15:45.616 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-15 00:15:45.627 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-15 00:15:45.627 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-15 00:15:45.627 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-15 00:15:45.639 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-15 00:15:45.639 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-15 00:15:45.639 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-15 23:59:26.226 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-15 23:59:26.229 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-15 23:59:26.230 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-15 23:59:26.231 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-15 23:59:26.231 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-15 23:59:26.235 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-15 23:59:26.236 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-15 23:59:26.236 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-15 23:59:26.252 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-15 23:59:26.261 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-15 23:59:26.261 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-15 23:59:26.277 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-15 23:59:26.278 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-15 23:59:26.278 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-15 23:59:26.295 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-15 23:59:26.296 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-15 23:59:26.296 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-15 23:59:26.309 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-15 23:59:26.310 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-15 23:59:26.310 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 10:55:28.097 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 10:55:28.101 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 10:55:28.102 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 10:55:28.112 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 10:55:28.116 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-16 10:55:28.118 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-16 10:55:28.118 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-16 10:55:28.119 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 10:55:28.131 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-16 10:55:28.133 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-16 10:55:28.133 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 10:55:28.146 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-16 10:55:28.147 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-16 10:55:28.147 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 10:55:28.159 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-16 10:55:28.160 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-16 10:55:28.160 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 10:55:28.173 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-16 10:55:28.173 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-16 10:55:28.173 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-16 12:04:51.727 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-16 12:04:51.731 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 12:04:51.732 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 12:04:51.732 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 12:04:51.732 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 12:04:51.735 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-16 12:04:51.737 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-16 12:04:51.737 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-16 12:04:51.757 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-16 12:04:51.761 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-16 12:04:51.763 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 12:04:51.773 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-16 12:04:51.773 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-16 12:04:51.773 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 12:04:51.787 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-16 12:04:51.787 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-16 12:04:51.797 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 12:04:51.866 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-16 12:04:51.866 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-16 12:04:51.866 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 12:13:17.817 ServerApp] Starting buffering for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 12:13:17.818 ServerApp] Starting buffering for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 12:13:17.818 ServerApp] Starting buffering for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 12:13:17.818 ServerApp] Starting buffering for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 12:13:17.819 ServerApp] Starting buffering for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+[I 2026-02-16 12:13:17.891 ServerApp] Adapting from protocol version 5.3 (kernel 5157131f-66dd-4f28-b992-675038a28a6b) to 5.4 (client).
+[I 2026-02-16 12:13:17.891 ServerApp] Connecting to kernel 5157131f-66dd-4f28-b992-675038a28a6b.
+[I 2026-02-16 12:13:17.891 ServerApp] Restoring connection for 5157131f-66dd-4f28-b992-675038a28a6b:74a61dfb-37da-4413-9407-7723846ef4ef
+[I 2026-02-16 12:13:17.907 ServerApp] Adapting from protocol version 5.3 (kernel 612a0dba-e6d3-4420-87eb-800419da24e4) to 5.4 (client).
+[I 2026-02-16 12:13:17.908 ServerApp] Connecting to kernel 612a0dba-e6d3-4420-87eb-800419da24e4.
+[I 2026-02-16 12:13:17.908 ServerApp] Restoring connection for 612a0dba-e6d3-4420-87eb-800419da24e4:54ff66a1-7de3-4335-94d3-ab04b60dd4e6
+[I 2026-02-16 12:13:17.922 ServerApp] Adapting from protocol version 5.3 (kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0) to 5.4 (client).
+[I 2026-02-16 12:13:17.923 ServerApp] Connecting to kernel fd7e7096-ab8f-4bca-a624-f9093e4807e0.
+[I 2026-02-16 12:13:17.923 ServerApp] Restoring connection for fd7e7096-ab8f-4bca-a624-f9093e4807e0:c91f075a-2f08-4209-b531-e8e81eb7fd5a
+[I 2026-02-16 12:13:17.941 ServerApp] Adapting from protocol version 5.3 (kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62) to 5.4 (client).
+[I 2026-02-16 12:13:17.942 ServerApp] Connecting to kernel 7ee8d7e8-6cf5-4855-8817-53983e3fde62.
+[I 2026-02-16 12:13:17.943 ServerApp] Restoring connection for 7ee8d7e8-6cf5-4855-8817-53983e3fde62:ffde6b02-3c67-4423-a146-0b75bb852a67
+[I 2026-02-16 12:13:17.959 ServerApp] Adapting from protocol version 5.3 (kernel 3d2a9494-fd1c-455d-98c6-743146c71f84) to 5.4 (client).
+[I 2026-02-16 12:13:17.960 ServerApp] Connecting to kernel 3d2a9494-fd1c-455d-98c6-743146c71f84.
+[I 2026-02-16 12:13:17.960 ServerApp] Restoring connection for 3d2a9494-fd1c-455d-98c6-743146c71f84:72c3cc69-d4e3-477e-a48b-696ac873da51
+
+  [Restored Feb 16, 2026 at 12:40:47 PM]
+Last login: Mon Feb 16 12:40:34 on console
+Restored session: Mon 16 Feb 2026 12:35:48 CET
+denise.macalino@BC-0216-Denise Jupyter % pip install pandas numpy matplotlib seaborn streamlit jupyter
+zsh: command not found: pip
+denise.macalino@BC-0216-Denise Jupyter % ls
+env		Test.ipynb	Untitled.ipynb	Untitled1.ipynb
+denise.macalino@BC-0216-Denise Jupyter % cd
+denise.macalino@BC-0216-Denise ~ % //cd
+zsh: no such file or directory: //cd
+denise.macalino@BC-0216-Denise ~ % /cd
+zsh: no such file or directory: /cd
+denise.macalino@BC-0216-Denise ~ % cd/
+zsh: no such file or directory: cd/
+denise.macalino@BC-0216-Denise ~ % ls
+Applications		hormone_ai_api_demo
+ClassEnvironment	Library
+Code			Movies
+Desktop			Music
+Documents		Pictures
+Downloads		Public
+denise.macalino@BC-0216-Denise ~ % cd Desktop
+denise.macalino@BC-0216-Denise Desktop % ls
+AAR.mov
+alter-prototype
+Bb5.png
+C5.png
+contiki.jpeg
+D5.png
+database.mov
+Denise-Macalino_Documents.zip
+Design Activity.pdf
+designpatterns.mov
+Dirty-Little-Secret_Rhythm-Guitar.pdf
+F5.png
+Final Project
+informemedico.pdf
+Initial Request 2024
+intrepid.jpg
+Jupyter
+Lawyer
+Masters HI & AI
+ML-Slides_1.pdf
+movies-project
+New Folder With Items
+Screen Recording 2026-02-22 at 6.33.34 PM.mov
+Screen Recording 2026-02-22 at 7.51.49 PM.mov
+Screen Recording 2026-02-22 at 7.52.28 PM.mov
+Screen Recording 2026-02-22 at 7.52.50 PM.mov
+Screen Recording 2026-02-22 at 7.54.27 PM.mov
+Screen Recording 2026-03-05 at 1.02.01 PM.mov
+Screen Recording 2026-03-05 at 12.15.50 PM.mov
+screencapture-bibliocommons-atlassian-net-wiki-spaces-CD-pages-4910481464-User-Testing-AI-ALA-Prototype-2026-02-24-10_29_33.png
+ScreenRecording_02-22-2026 18-18-10_1.MP4
+Screenshot 2026-02-22 at 5.22.08 PM.png
+Screenshot 2026-02-22 at 5.38.17 PM.png
+Screenshot 2026-02-22 at 5.38.24 PM.png
+Screenshot 2026-02-22 at 5.38.58 PM.png
+Screenshot 2026-02-22 at 5.50.23 PM.png
+Screenshot 2026-02-24 at 11.35.32 AM.png
+Screenshot 2026-02-25 at 10.03.41 AM.png
+Screenshot 2026-02-25 at 10.26.45 AM.png
+Screenshot 2026-03-03 at 2.52.07 PM.png
+Screenshot 2026-03-03 at 2.52.14 PM.png
+Screenshot 2026-03-03 at 3.21.28 PM.png
+Screenshot 2026-03-04 at 4.45.23 PM.png
+Screenshot 2026-03-07 at 7.00.15 PM.png
+Spain Documents
+Taxes
+TruTravels
+Work Documents
+denise.macalino@BC-0216-Denise Desktop % cd movies-project
+denise.macalino@BC-0216-Denise movies-project % ls
+app.py			movies.csv
+movies_cleaned.csv	README.md
+movies_eda.ipynb
+denise.macalino@BC-0216-Denise movies-project % pip install pandas numpy matplotlib seaborn streamlit jupyter
+zsh: command not found: pip
+denise.macalino@BC-0216-Denise movies-project % pip install pandas numpy matplotlib seaborn streamlit jupyter
+zsh: command not found: pip
+denise.macalino@BC-0216-Denise movies-project % pip3 install pandas numpy matplotlib seaborn streamlit jupyter
+Requirement already satisfied: pandas in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2.3.3)
+Requirement already satisfied: numpy in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2.3.4)
+Collecting matplotlib
+  Downloading matplotlib-3.10.8-cp314-cp314-macosx_11_0_arm64.whl.metadata (52 kB)
+Collecting seaborn
+  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Requirement already satisfied: streamlit in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (1.50.0)
+Collecting jupyter
+  Downloading jupyter-1.1.1-py2.py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from pandas) (2025.2)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.62.0-cp314-cp314-macosx_10_15_universal2.whl.metadata (117 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging>=20.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from matplotlib) (25.0)
+Requirement already satisfied: pillow>=8 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from matplotlib) (11.3.0)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: altair!=5.4.0,!=5.4.1,<6,>=4.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (5.5.0)
+Requirement already satisfied: blinker<2,>=1.5.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (1.9.0)
+Requirement already satisfied: cachetools<7,>=4.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (6.2.1)
+Requirement already satisfied: click<9,>=7.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (8.3.0)
+Requirement already satisfied: protobuf<7,>=3.20 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (6.33.0)
+Requirement already satisfied: pyarrow>=7.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (22.0.0)
+Requirement already satisfied: requests<3,>=2.27 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (2.32.5)
+Requirement already satisfied: tenacity<10,>=8.1.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (9.1.2)
+Requirement already satisfied: toml<2,>=0.10.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (0.10.2)
+Requirement already satisfied: typing-extensions<5,>=4.4.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (4.15.0)
+Requirement already satisfied: gitpython!=3.1.19,<4,>=3.0.7 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (3.1.45)
+Requirement already satisfied: pydeck<1,>=0.8.0b4 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (0.9.1)
+Requirement already satisfied: tornado!=6.5.0,<7,>=6.0.3 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from streamlit) (6.5.2)
+Requirement already satisfied: jinja2 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (3.1.6)
+Requirement already satisfied: jsonschema>=3.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (4.25.1)
+Requirement already satisfied: narwhals>=1.14.2 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (2.9.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from gitpython!=3.1.19,<4,>=3.0.7->streamlit) (4.0.12)
+Requirement already satisfied: smmap<6,>=3.0.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit) (5.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from requests<3,>=2.27->streamlit) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from requests<3,>=2.27->streamlit) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from requests<3,>=2.27->streamlit) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from requests<3,>=2.27->streamlit) (2025.10.5)
+Collecting notebook (from jupyter)
+  Downloading notebook-7.5.4-py3-none-any.whl.metadata (10 kB)
+Collecting jupyter-console (from jupyter)
+  Downloading jupyter_console-6.6.3-py3-none-any.whl.metadata (5.8 kB)
+Collecting nbconvert (from jupyter)
+  Using cached nbconvert-7.17.0-py3-none-any.whl.metadata (8.4 kB)
+Collecting ipykernel (from jupyter)
+  Downloading ipykernel-7.2.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting ipywidgets (from jupyter)
+  Downloading ipywidgets-8.1.8-py3-none-any.whl.metadata (2.4 kB)
+Collecting jupyterlab (from jupyter)
+  Downloading jupyterlab-4.5.5-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jinja2->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (3.0.3)
+Requirement already satisfied: attrs>=22.2.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (25.4.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (0.37.0)
+Requirement already satisfied: rpds-py>=0.7.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit) (0.28.0)
+Requirement already satisfied: six>=1.5 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Collecting appnope>=0.1.2 (from ipykernel->jupyter)
+  Using cached appnope-0.1.4-py2.py3-none-any.whl.metadata (908 bytes)
+Collecting comm>=0.1.1 (from ipykernel->jupyter)
+  Using cached comm-0.2.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel->jupyter)
+  Downloading debugpy-1.8.20-cp314-cp314-macosx_15_0_universal2.whl.metadata (1.4 kB)
+Collecting ipython>=7.23.1 (from ipykernel->jupyter)
+  Downloading ipython-9.11.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting jupyter-client>=8.8.0 (from ipykernel->jupyter)
+  Using cached jupyter_client-8.8.0-py3-none-any.whl.metadata (8.4 kB)
+Collecting jupyter-core!=6.0.*,>=5.1 (from ipykernel->jupyter)
+  Using cached jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel->jupyter)
+  Using cached matplotlib_inline-0.2.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting nest-asyncio>=1.4 (from ipykernel->jupyter)
+  Using cached nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting psutil>=5.7 (from ipykernel->jupyter)
+  Using cached psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting pyzmq>=25 (from ipykernel->jupyter)
+  Using cached pyzmq-27.1.0-cp312-abi3-macosx_10_15_universal2.whl.metadata (6.0 kB)
+Collecting traitlets>=5.4.0 (from ipykernel->jupyter)
+  Using cached traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting decorator>=5.1.0 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.2 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting pexpect>4.6 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached prompt_toolkit-3.0.52-py3-none-any.whl.metadata (6.4 kB)
+Collecting pygments>=2.14.0 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data>=0.6.0 (from ipython>=7.23.1->ipykernel->jupyter)
+  Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting wcwidth (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel->jupyter)
+  Downloading wcwidth-0.6.0-py3-none-any.whl.metadata (30 kB)
+Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.18.2->ipython>=7.23.1->ipykernel->jupyter)
+  Downloading parso-0.8.6-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting platformdirs>=2.5 (from jupyter-core!=6.0.*,>=5.1->ipykernel->jupyter)
+  Downloading platformdirs-4.9.4-py3-none-any.whl.metadata (4.7 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.6->ipython>=7.23.1->ipykernel->jupyter)
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel->jupyter)
+  Using cached executing-2.2.1-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel->jupyter)
+  Using cached asttokens-3.0.1-py3-none-any.whl.metadata (4.9 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel->jupyter)
+  Using cached pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+Collecting widgetsnbextension~=4.0.14 (from ipywidgets->jupyter)
+  Downloading widgetsnbextension-4.0.15-py3-none-any.whl.metadata (1.6 kB)
+Collecting jupyterlab_widgets~=3.0.15 (from ipywidgets->jupyter)
+  Downloading jupyterlab_widgets-3.0.16-py3-none-any.whl.metadata (20 kB)
+Collecting async-lru>=1.0.0 (from jupyterlab->jupyter)
+  Downloading async_lru-2.2.0-py3-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: httpx<1,>=0.25.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jupyterlab->jupyter) (0.28.1)
+Collecting jupyter-lsp>=2.0.0 (from jupyterlab->jupyter)
+  Using cached jupyter_lsp-2.3.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting jupyter-server<3,>=2.4.0 (from jupyterlab->jupyter)
+  Using cached jupyter_server-2.17.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting jupyterlab-server<3,>=2.28.0 (from jupyterlab->jupyter)
+  Using cached jupyterlab_server-2.28.0-py3-none-any.whl.metadata (5.9 kB)
+Collecting notebook-shim>=0.2 (from jupyterlab->jupyter)
+  Using cached notebook_shim-0.2.4-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: setuptools>=41.1.0 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jupyterlab->jupyter) (80.9.0)
+Requirement already satisfied: anyio in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from httpx<1,>=0.25.0->jupyterlab->jupyter) (4.11.0)
+Requirement already satisfied: httpcore==1.* in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from httpx<1,>=0.25.0->jupyterlab->jupyter) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from httpcore==1.*->httpx<1,>=0.25.0->jupyterlab->jupyter) (0.16.0)
+Collecting argon2-cffi>=21.1 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached argon2_cffi-25.1.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting jupyter-events>=0.11.0 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached jupyter_events-0.12.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting jupyter-server-terminals>=0.4.4 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached jupyter_server_terminals-0.5.4-py3-none-any.whl.metadata (5.9 kB)
+Collecting nbformat>=5.3.0 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting prometheus-client>=0.9 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached prometheus_client-0.24.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting send2trash>=1.8.2 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached send2trash-2.1.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting terminado>=0.8.3 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached terminado-0.18.1-py3-none-any.whl.metadata (5.8 kB)
+Collecting websocket-client>=1.7 (from jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting babel>=2.10 (from jupyterlab-server<3,>=2.28.0->jupyterlab->jupyter)
+  Using cached babel-2.18.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting json5>=0.9.0 (from jupyterlab-server<3,>=2.28.0->jupyterlab->jupyter)
+  Using cached json5-0.13.0-py3-none-any.whl.metadata (36 kB)
+Requirement already satisfied: sniffio>=1.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from anyio->httpx<1,>=0.25.0->jupyterlab->jupyter) (1.3.1)
+Collecting argon2-cffi-bindings (from argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached argon2_cffi_bindings-25.1.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (7.4 kB)
+Collecting python-json-logger>=2.0.4 (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached python_json_logger-4.0.0-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: pyyaml>=5.3 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter) (6.0.3)
+Collecting rfc3339-validator (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting rfc3986-validator>=0.1.1 (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached rfc3986_validator-0.1.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting fqdn (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached fqdn-1.5.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting isoduration (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached isoduration-20.11.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting jsonpointer>1.13 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+Collecting rfc3987-syntax>=1.1.0 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached rfc3987_syntax-1.1.0-py3-none-any.whl.metadata (7.7 kB)
+Collecting uri-template (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached uri_template-1.3.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting webcolors>=24.6.0 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached webcolors-25.10.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting beautifulsoup4 (from nbconvert->jupyter)
+  Using cached beautifulsoup4-4.14.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting bleach!=5.0.0 (from bleach[css]!=5.0.0->nbconvert->jupyter)
+  Using cached bleach-6.3.0-py3-none-any.whl.metadata (31 kB)
+Collecting defusedxml (from nbconvert->jupyter)
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting jupyterlab-pygments (from nbconvert->jupyter)
+  Using cached jupyterlab_pygments-0.3.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting mistune<4,>=2.0.3 (from nbconvert->jupyter)
+  Using cached mistune-3.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting nbclient>=0.5.0 (from nbconvert->jupyter)
+  Using cached nbclient-0.10.4-py3-none-any.whl.metadata (8.3 kB)
+Collecting pandocfilters>=1.4.1 (from nbconvert->jupyter)
+  Using cached pandocfilters-1.5.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting webencodings (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert->jupyter)
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting tinycss2<1.5,>=1.1.0 (from bleach[css]!=5.0.0->nbconvert->jupyter)
+  Using cached tinycss2-1.4.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting fastjsonschema>=2.15 (from nbformat>=5.3.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached fastjsonschema-2.21.2-py3-none-any.whl.metadata (2.3 kB)
+Collecting lark>=1.2.2 (from rfc3987-syntax>=1.1.0->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached lark-1.3.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting cffi>=2.0.0b1 (from argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Downloading cffi-2.0.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0b1->argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->nbconvert->jupyter)
+  Using cached soupsieve-2.8.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting arrow>=0.15.0 (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab->jupyter)
+  Using cached arrow-1.4.0-py3-none-any.whl.metadata (7.7 kB)
+Downloading matplotlib-3.10.8-cp314-cp314-macosx_11_0_arm64.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 25.9 MB/s  0:00:00
+Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+Downloading jupyter-1.1.1-py2.py3-none-any.whl (2.7 kB)
+Downloading contourpy-1.3.3-cp314-cp314-macosx_11_0_arm64.whl (273 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.62.0-cp314-cp314-macosx_10_15_universal2.whl (2.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 30.5 MB/s  0:00:00
+Downloading kiwisolver-1.5.0-cp314-cp314-macosx_11_0_arm64.whl (64 kB)
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading ipykernel-7.2.0-py3-none-any.whl (118 kB)
+Using cached appnope-0.1.4-py2.py3-none-any.whl (4.3 kB)
+Using cached comm-0.2.3-py3-none-any.whl (7.3 kB)
+Downloading debugpy-1.8.20-cp314-cp314-macosx_15_0_universal2.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 18.8 MB/s  0:00:00
+Downloading ipython-9.11.0-py3-none-any.whl (624 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 624.2/624.2 kB 9.9 MB/s  0:00:00
+Using cached prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Using cached jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+Downloading parso-0.8.6-py2.py3-none-any.whl (106 kB)
+Using cached jupyter_client-8.8.0-py3-none-any.whl (107 kB)
+Using cached jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Using cached matplotlib_inline-0.2.1-py3-none-any.whl (9.5 kB)
+Using cached nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Using cached pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Downloading platformdirs-4.9.4-py3-none-any.whl (21 kB)
+Using cached psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl (129 kB)
+Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Using cached pyzmq-27.1.0-cp312-abi3-macosx_10_15_universal2.whl (1.3 MB)
+Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Using cached asttokens-3.0.1-py3-none-any.whl (27 kB)
+Using cached executing-2.2.1-py2.py3-none-any.whl (28 kB)
+Using cached traitlets-5.14.3-py3-none-any.whl (85 kB)
+Downloading ipywidgets-8.1.8-py3-none-any.whl (139 kB)
+Downloading jupyterlab_widgets-3.0.16-py3-none-any.whl (914 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━ 914.9/914.9 kB 21.6 MB/s  0:00:00
+Downloading widgetsnbextension-4.0.15-py3-none-any.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 9.0 MB/s  0:00:00
+Downloading jupyter_console-6.6.3-py3-none-any.whl (24 kB)
+Downloading jupyterlab-4.5.5-py3-none-any.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 17.6 MB/s  0:00:00
+Using cached jupyter_server-2.17.0-py3-none-any.whl (388 kB)
+Using cached jupyterlab_server-2.28.0-py3-none-any.whl (59 kB)
+Using cached argon2_cffi-25.1.0-py3-none-any.whl (14 kB)
+Downloading async_lru-2.2.0-py3-none-any.whl (7.9 kB)
+Using cached babel-2.18.0-py3-none-any.whl (10.2 MB)
+Using cached json5-0.13.0-py3-none-any.whl (36 kB)
+Using cached jupyter_events-0.12.0-py3-none-any.whl (19 kB)
+Using cached jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+Using cached jupyter_lsp-2.3.0-py3-none-any.whl (76 kB)
+Using cached jupyter_server_terminals-0.5.4-py3-none-any.whl (13 kB)
+Using cached nbconvert-7.17.0-py3-none-any.whl (261 kB)
+Using cached mistune-3.2.0-py3-none-any.whl (53 kB)
+Using cached bleach-6.3.0-py3-none-any.whl (164 kB)
+Using cached tinycss2-1.4.0-py3-none-any.whl (26 kB)
+Using cached nbclient-0.10.4-py3-none-any.whl (25 kB)
+Using cached nbformat-5.10.4-py3-none-any.whl (78 kB)
+Using cached fastjsonschema-2.21.2-py3-none-any.whl (24 kB)
+Using cached notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+Using cached pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+Using cached prometheus_client-0.24.1-py3-none-any.whl (64 kB)
+Using cached python_json_logger-4.0.0-py3-none-any.whl (15 kB)
+Using cached rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+Using cached rfc3987_syntax-1.1.0-py3-none-any.whl (8.0 kB)
+Using cached lark-1.3.1-py3-none-any.whl (113 kB)
+Using cached send2trash-2.1.0-py3-none-any.whl (17 kB)
+Using cached terminado-0.18.1-py3-none-any.whl (14 kB)
+Using cached webcolors-25.10.0-py3-none-any.whl (14 kB)
+Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Using cached websocket_client-1.9.0-py3-none-any.whl (82 kB)
+Using cached argon2_cffi_bindings-25.1.0-cp39-abi3-macosx_11_0_arm64.whl (31 kB)
+Downloading cffi-2.0.0-cp314-cp314-macosx_11_0_arm64.whl (181 kB)
+Using cached beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+Using cached soupsieve-2.8.3-py3-none-any.whl (37 kB)
+Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Using cached fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+Using cached isoduration-20.11.0-py3-none-any.whl (11 kB)
+Using cached arrow-1.4.0-py3-none-any.whl (68 kB)
+Using cached jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+Downloading notebook-7.5.4-py3-none-any.whl (14.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.6/14.6 MB 16.8 MB/s  0:00:00
+Using cached pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Using cached pycparser-3.0-py3-none-any.whl (48 kB)
+Using cached rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Using cached uri_template-1.3.0-py3-none-any.whl (11 kB)
+Downloading wcwidth-0.6.0-py3-none-any.whl (94 kB)
+Installing collected packages: webencodings, pure-eval, ptyprocess, fastjsonschema, widgetsnbextension, websocket-client, webcolors, wcwidth, uri-template, traitlets, tinycss2, terminado, soupsieve, send2trash, rfc3986-validator, rfc3339-validator, pyzmq, python-json-logger, pyparsing, pygments, pycparser, psutil, prometheus-client, platformdirs, pexpect, parso, pandocfilters, nest-asyncio, mistune, lark, kiwisolver, jupyterlab_widgets, jupyterlab-pygments, jsonpointer, json5, fqdn, fonttools, executing, defusedxml, decorator, debugpy, cycler, contourpy, comm, bleach, babel, async-lru, asttokens, appnope, stack_data, rfc3987-syntax, prompt_toolkit, matplotlib-inline, matplotlib, jupyter-server-terminals, jupyter-core, jedi, ipython-pygments-lexers, cffi, beautifulsoup4, arrow, seaborn, jupyter-client, isoduration, ipython, argon2-cffi-bindings, nbformat, ipywidgets, ipykernel, argon2-cffi, nbclient, jupyter-events, jupyter-console, nbconvert, jupyter-server, notebook-shim, jupyterlab-server, jupyter-lsp, jupyterlab, notebook, jupyter
+Successfully installed appnope-0.1.4 argon2-cffi-25.1.0 argon2-cffi-bindings-25.1.0 arrow-1.4.0 asttokens-3.0.1 async-lru-2.2.0 babel-2.18.0 beautifulsoup4-4.14.3 bleach-6.3.0 cffi-2.0.0 comm-0.2.3 contourpy-1.3.3 cycler-0.12.1 debugpy-1.8.20 decorator-5.2.1 defusedxml-0.7.1 executing-2.2.1 fastjsonschema-2.21.2 fonttools-4.62.0 fqdn-1.5.1 ipykernel-7.2.0 ipython-9.11.0 ipython-pygments-lexers-1.1.1 ipywidgets-8.1.8 isoduration-20.11.0 jedi-0.19.2 json5-0.13.0 jsonpointer-3.0.0 jupyter-1.1.1 jupyter-client-8.8.0 jupyter-console-6.6.3 jupyter-core-5.9.1 jupyter-events-0.12.0 jupyter-lsp-2.3.0 jupyter-server-2.17.0 jupyter-server-terminals-0.5.4 jupyterlab-4.5.5 jupyterlab-pygments-0.3.0 jupyterlab-server-2.28.0 jupyterlab_widgets-3.0.16 kiwisolver-1.5.0 lark-1.3.1 matplotlib-3.10.8 matplotlib-inline-0.2.1 mistune-3.2.0 nbclient-0.10.4 nbconvert-7.17.0 nbformat-5.10.4 nest-asyncio-1.6.0 notebook-7.5.4 notebook-shim-0.2.4 pandocfilters-1.5.1 parso-0.8.6 pexpect-4.9.0 platformdirs-4.9.4 prometheus-client-0.24.1 prompt_toolkit-3.0.52 psutil-7.2.2 ptyprocess-0.7.0 pure-eval-0.2.3 pycparser-3.0 pygments-2.19.2 pyparsing-3.3.2 python-json-logger-4.0.0 pyzmq-27.1.0 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 rfc3987-syntax-1.1.0 seaborn-0.13.2 send2trash-2.1.0 soupsieve-2.8.3 stack_data-0.6.3 terminado-0.18.1 tinycss2-1.4.0 traitlets-5.14.3 uri-template-1.3.0 wcwidth-0.6.0 webcolors-25.10.0 webencodings-0.5.1 websocket-client-1.9.0 widgetsnbextension-4.0.15
+
+[notice] A new release of pip is available: 25.2 -> 26.0.1
+[notice] To update, run: pip3 install --upgrade pip
+denise.macalino@BC-0216-Denise movies-project % jupyter notebook 
+[I 2026-03-09 18:20:50.600 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-03-09 18:20:50.602 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-03-09 18:20:50.604 ServerApp] jupyterlab | extension was successfully linked.
+[I 2026-03-09 18:20:50.605 ServerApp] notebook | extension was successfully linked.
+[I 2026-03-09 18:20:50.811 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-03-09 18:20:51.317 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-03-09 18:20:51.320 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-03-09 18:20:51.321 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-03-09 18:20:51.324 LabApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/jupyterlab
+[I 2026-03-09 18:20:51.324 LabApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.14/share/jupyter/lab
+[I 2026-03-09 18:20:51.324 LabApp] Extension Manager is 'pypi'.
+[I 2026-03-09 18:20:51.371 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-03-09 18:20:51.373 ServerApp] notebook | extension was successfully loaded.
+[I 2026-03-09 18:20:51.374 ServerApp] Serving notebooks from local directory: /Users/denise.macalino/Desktop/movies-project
+[I 2026-03-09 18:20:51.374 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2026-03-09 18:20:51.374 ServerApp] http://localhost:8888/tree?token=b706c01db1e19de583afb209a6833ea8fc41ac277f17f005
+[I 2026-03-09 18:20:51.374 ServerApp]     http://127.0.0.1:8888/tree?token=b706c01db1e19de583afb209a6833ea8fc41ac277f17f005
+[I 2026-03-09 18:20:51.374 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2026-03-09 18:20:51.377 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:/Users/denise.macalino/Library/Jupyter/runtime/jpserver-70633-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=b706c01db1e19de583afb209a6833ea8fc41ac277f17f005
+        http://127.0.0.1:8888/tree?token=b706c01db1e19de583afb209a6833ea8fc41ac277f17f005
+[I 2026-03-09 18:20:51.391 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[W 2026-03-09 18:21:38.322 ServerApp] Notebook movies_eda.ipynb is not trusted
+[W 2026-03-09 18:21:38.732 ServerApp] Notebook movies_eda.ipynb is not trusted
+[I 2026-03-09 18:21:39.020 ServerApp] Kernel started: d20d4f79-27f1-4834-ba1d-670a6337500d
+[I 2026-03-09 18:21:39.475 ServerApp] Adapting from protocol version 5.3 (kernel d20d4f79-27f1-4834-ba1d-670a6337500d) to 5.4 (client).
+[I 2026-03-09 18:21:39.476 ServerApp] Adapting from protocol version 5.3 (kernel d20d4f79-27f1-4834-ba1d-670a6337500d) to 5.4 (client).
+[I 2026-03-09 18:21:39.476 ServerApp] Connecting to kernel d20d4f79-27f1-4834-ba1d-670a6337500d.
+[I 2026-03-09 18:21:39.478 ServerApp] Connecting to kernel d20d4f79-27f1-4834-ba1d-670a6337500d.
+[W 2026-03-09 18:21:39.479 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-03-09 18:21:39.488 ServerApp] Adapting from protocol version 5.3 (kernel d20d4f79-27f1-4834-ba1d-670a6337500d) to 5.4 (client).
+[I 2026-03-09 18:21:39.489 ServerApp] Connecting to kernel d20d4f79-27f1-4834-ba1d-670a6337500d.
+[W 2026-03-09 18:21:39.512 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x10f1dda50>
+streamlit run app.py
+streamlit run app.py
+[I 2026-03-09 18:23:39.805 ServerApp] Saving file at /movies_eda.ipynb
+ls
+cd ~/Desktop/movies-project
+streamlit run app.py
+denise.macalino@BC-0216-Denise ~ %
+
